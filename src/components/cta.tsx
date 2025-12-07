@@ -12,12 +12,14 @@ export default function CTA() {
     return (
         <div className="bg-linear-to-b from-transparent via-[#f5c54257] to-transparent bg-blend-darken -mt-5 w-screen rounded-lg flex flex-col justify-center items-center gap-4 shadow-lg ">   
 
+        <div className="w-full h-35 bg-linear-to-b from-black/99 to-transparent blur-xl"></div>
+
             <h2 
             className="bebas text-5xl text-balance text-center max-w-[80vw] md:text-8xl xl:text-8xl xl:my-10 xl:max-w-[730px]"
             >Historias reales de <span className="text-[#F5C542] animate-pulse">transformación:</span>
             </h2>
 
-            <div className="w-full max-w-[80vw] flex flex-col items-center justify-center xl:max-w-[730px]">
+            <div className="w-full max-w-[80vw] flex flex-col items-center justify-center xl:max-w-[450px]">
                 <Carousel className="max-w-[80vw]" aria-label="Historias reales de transformación"
                 opts={{
                     loop:true,

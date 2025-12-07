@@ -6,13 +6,13 @@ import Footer from "@/components/footer";
 
 export default function Content() {
     return (
-        <main className="flex flex-col justify-center p-2 items-center bg-[url('content/background.jpg')] bg-cover bg-center bg-no-repeat text-white max-w-screen">
+        <main className="flex flex-col justify-center p-2 items-center bg-[url('content/background.jpg')] backdrop-blur-lg backdrop-contrast-50 backdrop-opacity-40 bg-cover bg-center bg-no-repeat text-white max-w-screen">
             <section className=" mt-5 flex flex-col justify-center bg-no-repeat text-white ">
 
                 <div className="flex flex-col justify-center items-center max-w-screen w-[80vw] text-center gap-5 p-4 x">
 
                     <h2 
-                    className=" m-0 p-0 bebas text-5xl sm:text-5xl text-center text-balance max-w-[80vw] md:text-7xl xl:text-[3rem] xl:text-balance xl:max-w-[1000px]"
+                    className=" m-0 p-0 bebas text-5xl sm:text-5xl text-center text-balance max-w-[80vw] md:text-7xl xl:text-[5rem] xl:text-balance xl:max-w-[730px]"
                     >¡Te pones fuerte, <span className="text-[#F5C542]">como que mañana sale el sol!</span></h2>
 
                 <div className="flex flex-col-reverse justify-center items-center gap-6 2xl:flex-row">

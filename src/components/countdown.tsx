@@ -33,7 +33,7 @@ return (
         Oferta disponible solo por <span className="text-[#F5C542]">tiempo limitado</span>
     </h2>
 
-    <video src="/content/video-2.mp4" autoPlay muted loop className="h-[450px] w-[700px] shadow-lg object-cover rounded-4xl mt-5 md:m-4 lg:h-[900px] lg:w-[900px] xl:h-[710px] xl:w-[730px]"></video>
+    <video src="/content/video-2.mp4" autoPlay muted loop className="h-[450px] w-[700px] shadow-lg object-cover rounded-4xl mt-5 md:m-4 lg:h-[900px] lg:w-[900px] xl:h-[710px] xl:w-[550px]"></video>
 
     <div className="text-8xl -mt-11 px-5 bg-black tracking-wider bebas text-white rounded-xl shadow-lg md:m-0 md:text-9xl lg:mt-5 xl:text-9xl xl:mt-0 xl:max-w-[550px]">
         {minutes}:{secs}
