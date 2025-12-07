@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 
 export default function Content() {
     return (
-        <main className="flex flex-col justify-center p-2 items-center bg-[url('content/background.jpg')] backdrop-blur-lg backdrop-contrast-50 backdrop-opacity-40 bg-cover bg-center bg-no-repeat text-white max-w-screen">
+        <main className="flex flex-col justify-center p-2 items-center bg-[url('/content/background.jpg')] backdrop-blur-lg backdrop-contrast-50 backdrop-opacity-40 bg-cover bg-center bg-no-repeat text-white max-w-screen">
             <section className=" mt-5 flex flex-col justify-center bg-no-repeat text-white ">
 
                 <div className="flex flex-col justify-center items-center max-w-screen w-[80vw] text-center gap-5 p-4 x">
