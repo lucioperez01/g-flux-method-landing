@@ -19,7 +19,7 @@ export default function Content() {
                     
                     <img src="/content/foto-1.jpeg" alt="Imagen de contenido método G-FLUX" 
                                         className="saturate-160 mt-4 mb-4 max-w-[280px] rounded-lg shadow-lg md:max-w-[600px] xl:max-w-[250px]"/>
-                    <p className="inter text-xl font-semibold max-w-[80vw] text-balance text-center md:text-2xl md:w-[600px] xl:text-3xl xl:text-justify xl:max-w-[450px]">En esta foto, era apenas un chaval y como solo aplicando la filosofía y estilo de vida de los grandes, como Arnold y Mike Mentzer, <span className="font-bold animate-pulse ">ya era toda una bestia.</span></p>
+                    <p className="inter text-xl font-semibold max-w-[80vw] text-balance text-center md:text-2xl md:w-[600px] xl:text-2xl xl:text-justify xl:max-w-[450px]">En esta foto, era apenas un chaval y como solo aplicando la filosofía y estilo de vida de los grandes, como Arnold y Mike Mentzer, <span className="font-bold animate-pulse ">ya era toda una bestia.</span></p>
                 </div>
 
                     

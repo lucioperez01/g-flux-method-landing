@@ -3,7 +3,9 @@ import { motion } from 'framer-motion';
 export default function Header() {
     return (
         <header 
-        className="relative bg-[url('content/background-1.jpg')] bg-position-[50%_top] h-[40vh] text-white flex flex-col justify-center items-center max-w-full 2xl:h-[55vh]" >
+        className="relative bg-[url('/content/background-1.jpg')] bg-position-[50%_top] h-[40vh] text-white flex flex-col justify-center items-center max-w-full 2xl:h-[60vh]" 
+        style={{ backgroundImage: `url(${encodeURI('/content/background-1.jpg')})` }}
+        >
             <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="relative z-20 flex flex-col justify-center items-center max-w-full 2xl:h-[40vh] ">
