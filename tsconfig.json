@@ -8,10 +8,15 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "dist",          // <- Archivos compilados van a dist/
-    "rootDir": "src",          // <- Carpeta de código fuente
-    "allowJs": false,          // <- No compila archivos .js
-    "noEmit": true             // <- Vite se encarga de compilar, TS solo chequea tipos
+    "outDir": "dist",
+    "rootDir": "src",
+    "allowJs": false,
+    "noEmit": true,
+
+    "baseUrl": ".",          // <--- base para paths
+    "paths": {
+      "@/*": ["src/*"]       // <--- alias @ funciona para TS
+    }
   },
   "include": ["src"]
 }
