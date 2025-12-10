@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
-import { Button } from "@/components/ui/button"
+import CtaButton from "@/components/ui/ctaButton"
 
 export default function Countdown() {
+    let price = '99€'
+    let previousPrice = '299€'
   // --- CONFIGURACIÓN DEL TIEMPO ---
   // 10 minutos desde que el usuario entra
   const initialSeconds = 10 * 60
@@ -45,9 +47,12 @@ return (
 
     
     {seconds <= 0 ? null : (
-        <Button className="text-3xl bebas mt-10 p-8 py-6 pt-6 items-center max-w-[80vw] justify-center bg-[#B81D24] hover:bg-[#922121] hover:animate-none transition-colors border-3 md:text-5xl md:mt-9 md:py-8 md:px-3 "><a href="https://w.app/g-flux" className="cursor:pointer animate-pulse" target="_blank" rel="noopener noreferrer">QUIERO APROVECHAR LA OFERTA</a></Button>
-        )}
-        
+        <CtaButton
+        price={price}
+        previousPrice={previousPrice}
+        >
+        </CtaButton>
+    )}
     </div>
 )
 }

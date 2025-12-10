@@ -7,17 +7,38 @@ import {
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import { Button } from "@/components/ui/button"
+import Title from "@/components/ui/title"
+import HighLight from "@/components/ui/highlight"
+import CtaButton from "@/components/ui/ctaButton"
+import SubTitle from "./ui/subTitle"
 
 export default function CTA() {
+    let titleWidth = "80vw"
+    let titleSize = "5xl"
+    let titleMdSize = "8xl";
+    let titleXlSize = "8xl";
+    let titleXxlMaxWidth = "730px";
+    let price = '99€'
+    let previousPrice = '299€'
+
     return (
         <div className="bg-linear-to-b from-transparent via-[#f5c54257] to-transparent bg-blend-darken -mt-5 w-screen rounded-lg flex flex-col justify-center items-center gap-4 shadow-lg ">   
 
         <div className="w-full h-35 bg-linear-to-b from-black/99 to-transparent blur-xl"></div>
 
-            <h2 
-            className="bebas text-5xl text-balance text-center max-w-[80vw] md:text-8xl xl:text-8xl xl:my-10 xl:max-w-[730px]"
-            >Historias reales de <span className="text-[#F5C542] animate-pulse">transformación:</span>
-            </h2>
+            <Title
+                maxWidth = {titleWidth}
+                size={titleSize}
+                mdSize = {titleMdSize}
+                xlSize = {titleXlSize}
+                xxlMaxWidth = {titleXxlMaxWidth}
+                >
+                    Historias reales de <HighLight
+                    isAnimated={true}
+                    isOrange={true} highlightText="transformación:"></HighLight>
+                </Title>
+
+            
 
             <div className="w-full max-w-[80vw] flex flex-col items-center justify-center xl:max-w-[450px]">
                 <Carousel className="max-w-[80vw]" aria-label="Historias reales de transformación"
@@ -45,11 +66,18 @@ export default function CTA() {
                     <CarouselPrevious />
                     <CarouselNext />
                 </Carousel>
+
                 
                 <h2 className="mt-10 bebas text-6xl text-center text-balancemax-w-[80vw] md:text-8xl xl:text-6xl">¿Listo para <span className="text-[#de0914] animate-pulse">transformar</span> tu vida?</h2>
 
-                <Button className="text-3xl bebas mt-5 p-4 py-6 pt-7 items-center justify-center bg-[#B81D24] hover:bg-[#922121] hover:animate-none transition-colors border-3 md:text-5xl md:py-11 md:mt-10 xl:text-6xl xl:mt-10 xl:p-10 xl:px-6 xl:pt-11"><a href="https://w.app/g-flux" className="cursor:pointer animate-none" target="_blank" rel="noopener noreferrer">¡Empieza hoy por 30$!</a></Button>
+
+                <CtaButton
+                price={price}
+                previousPrice={previousPrice}
+                >
+                </CtaButton>
                 
+
             </div>
         </div>
     )

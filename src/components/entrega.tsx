@@ -24,7 +24,7 @@ export default function Entrega() {
                 <img src="/content/Foto-6.jpg" alt="excel" className="h-35 w-40 object-cover md:translate-x-8 xl:h-25 xl:w-35" />
                 <p className="inter text-2xl font-bold max-w-[80vw] text-center text-balance md:text-3xl md:p-4 xl:text-lg"> <span className="text-[#F5C542]">Dieta adaptada a ti</span> con el seguimiento en el plan de nutrición personalizado.</p>
             </div>
-
+        
         </section>
     )
 }
