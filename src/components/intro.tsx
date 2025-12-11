@@ -2,7 +2,6 @@ import Title from '@/components/ui/title';
 import HighLight from '@/components/ui/highlight'
 import SubTitle from '@/components/ui/subTitle';
 import ImageCard from '@/components/ui/imageCard';
-import { title } from 'process';
 
 export default function Intro () {
     // title config
@@ -37,7 +36,7 @@ export default function Intro () {
                     </Title>
                 </div> 
 
-                    <div className={`flex flex-col-reverse justify-center items-center gap-6 2xl:flex-row xl:max-w-[${titleXxlMaxWidth}]`}>
+                    <div className={`flex flex-col-reverse justify-center items-center gap-6 2xl:flex-column xl:max-w-[${titleXxlMaxWidth}]`}>
                         <ImageCard
                             src="/content/foto-1.jpeg"
                             alt="Imagen de contenido método G-Flux"
@@ -78,7 +77,7 @@ export default function Intro () {
                                         highlightText="Método G-flux?" />
                         </Title>
 
-                    <div className={`flex flex-col-reverse justify-center items-center gap-6 2xl:flex-row xl:max-w-[${titleXxlMaxWidth}]`}>
+                    <div className={`flex flex-col-reverse justify-center items-center gap-6 2xl:flex-col-reverse xl:max-w-[${titleXxlMaxWidth}]`}>
 
                             <ImageCard
                                 src="/content/foto-2.jpeg"

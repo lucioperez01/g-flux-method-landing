@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 
 export default function Header() {
+    const BACKGROUND_IMAGE_URL: any = encodeURI('/content/background-1.jpg')
     return (
         <header 
         className="relative bg-[url('/content/background-1.jpg')] bg-position-[50%_top] h-[40vh] text-white flex flex-col justify-center items-center max-w-full 2xl:h-[60vh]" 
-        style={{ backgroundImage: `url(${encodeURI('/content/background-1.jpg')})` }}
+        style={{ backgroundImage: `url(${BACKGROUND_IMAGE_URL})` }}
         >
             <div className="absolute inset-0 bg-black/60"></div>
 

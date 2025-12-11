@@ -1,7 +1,7 @@
 interface highlightProps {
     highlightText: string;
-    isOrange: boolean;
-    isAnimated: boolean;
+    isOrange?: boolean;
+    isAnimated?: boolean;
 }
 
 export default function HighLight({highlightText, isOrange=true, isAnimated=false}: highlightProps) {
