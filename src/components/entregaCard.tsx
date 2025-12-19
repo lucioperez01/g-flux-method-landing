@@ -1,32 +1,32 @@
 import SmallImage from "@/components/ui/smallImage"
 import SubTitle from "@/components/ui/subTitle"
-import HighLight from "@/components/ui/highlight"
 
-export default function EntregaCard() {
+interface entregaCardProps {
+    children: React.ReactNode;
+    src: string;
+    alt: string;
+    cover?: boolean;
+}
+
+export default function EntregaCard({children, src, alt, cover}: entregaCardProps) {
     return(
-        <div className="flex flex-col items-center justify-center bg-linear-to-tr from-[#f5c5423a] to transparent gap-4 p-3 rounded-xl border-3 border-[#F5C542] w-full min-h-lg md:flex-row md:h-65 xl:max-w-[730px] xl:min-h-[100px] xl:h-40  ">
+        <div className="flex flex-col items-center justify-center bg-linear-to-tr from-[#f5c5423a] to-transparent gap-10 px-10 rounded-xl border-3 border-[#F5C542] md:flex-row md:h-40 xl:max-w-xl 2xl:max-w-2xl">
                         <SmallImage
-                            src='/content/foto-3.png'
-                            alt='excel'
-                            h="[10px]"
-                            w="[5px]"
+                            src={src}
+                            alt={alt}
+                            cover={cover}
                         />
                         <SubTitle
-                            maxWidth="80vw"
-                            mdMaxWidth="80vw"
+                            maxWidth="70vw"
+                            mdMaxWidth="730px"
                             mdSize="2xl"
                             size="lg"
                             xlSize="lg"
                             xxlSize="lg"
                             xlMaxWidth="730px"
                         >
-                            Se te entrega un EXCEL con una 
-                            <HighLight
-                            highlightText=" rutina de 3 meses 100% personalizada a tu caso, "
-                            ></HighLight>
-                            ya que llenarás un formulario, para que te llegue un plan acorde a tu nivel, capacidad y equipo del gym disponible.
+                            {children}
                         </SubTitle>
-                        
                     </div>
     )
 }

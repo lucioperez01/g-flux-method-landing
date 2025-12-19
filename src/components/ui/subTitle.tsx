@@ -9,9 +9,9 @@ interface subtitleProps {
     xxlSize: string;
 }
 
-export default function SubTitle({children, maxWidth, mdMaxWidth, xlMaxWidth, size, mdSize, xlSize, xxlSize}: subtitleProps) {
+export default function SubTitle({children, mdMaxWidth, size, mdSize, xlSize}: subtitleProps) {
 return(
-    <p className={`inter text-${size} font-semibold max-w-[${maxWidth}] text-balance text-center md:text-${mdSize} md:w-[${mdMaxWidth}] xl:text-${xlSize} xl:text-justify xl:max-w-[${xlMaxWidth}]`}
+    <p className={`inter text-${size} font-semibold max-w-[80vw] text-balance text-center md:text-${mdSize} md:w-${mdMaxWidth} xl:text-${xlSize} xl:text-justify xl:max-w-xl`}
     >{children}
     </p>
 )

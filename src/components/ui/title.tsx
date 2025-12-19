@@ -5,13 +5,14 @@ interface titleProps {
     mdSize: string;
     xlSize: string;
     xxlMaxWidth: string;
+    
 }
 
-export default function Title({children, maxWidth, size, mdSize, xlSize, xxlMaxWidth}: titleProps){
+export default function Title({children, size, mdSize }: titleProps){
 
     return (
         <h2 
-            className={`bebas text-${size} text-center text-balance max-w-[${maxWidth}] md:text-${mdSize} xl:text-[${xlSize}] xl:text-balance xl:max-w-[${xxlMaxWidth}]`}
+            className={`bebas text-${size} text-center text-balance max-w-[80vw] md:text-${mdSize} xl:text-[4rem] xl:text-balance xl:max-w-xl 2xl-max-w-2xl`}
             >
             {children}
         </h2>

@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import CtaButton from "@/components/ui/ctaButton"
+import Title from "./ui/title"
+import HighLight from "./ui/highlight"
 
 export default function Countdown() {
     let price = '99€'
@@ -30,12 +32,12 @@ const secs = Math.floor(seconds % 60)
     .padStart(2, "0")
 
 return (
-    <div className="flex flex-col items-center gap-0 py-10">
-        <h2 className="text-5xl bebas text-center text-balance z-1 max-w-[80vw] rounded-xl md:text-7xl lg:text-9xl xl:text-6xl xl:mt-10 xl:max-w-[550px]">
+    <div className="flex flex-col items-center gap-5 py-10">
+        <h2 className="text-5xl bebas text-center text-balance z-1 max-w-[80vw] rounded-xl md:text-7xl lg:text-9xl xl:text-7xl xl:mt-10 xl:max-w-2xl">
         Oferta disponible solo por <span className="text-[#F5C542]">tiempo limitado</span>
     </h2>
 
-    <video src="/content/video-2.mp4" autoPlay muted loop className="h-[450px] w-[700px] shadow-lg object-cover rounded-4xl mt-5 md:m-4 lg:h-[900px] lg:w-[900px] xl:h-[710px] xl:w-[550px]"></video>
+    <video src="/content/video-2.mp4" controls muted loop className="h-[450px] w-[700px] shadow-lg object-cover rounded-4xl mt-5 md:m-4 lg:h-[900px] lg:w-[900px] xl:h-[710px] xl:w-[550px]"></video>
 
     <div className="text-8xl -mt-11 px-5 bg-black tracking-wider bebas text-white rounded-xl shadow-lg md:m-0 md:text-9xl lg:mt-5 xl:text-9xl xl:mt-0 xl:max-w-[550px]">
         {minutes}:{secs}

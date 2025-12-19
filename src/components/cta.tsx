@@ -36,7 +36,7 @@ export default function CTA() {
                     Historias reales de <HighLight
                     isAnimated={true}
                     isOrange={true} highlightText="transformación:"></HighLight>
-                </Title>
+            </Title>
 
             
 
