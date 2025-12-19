@@ -7,7 +7,7 @@ interface SmallImageProps {
 
 export default function SmallImage({ src, alt, cover }: SmallImageProps) {
     return (
-        <div className="flex items-center justify-center w-72 h-20">
+        <div className="flex items-center justify-center w-70 h-26 xl:w-72 xl:h-20">
         <img
             src={src}
             alt={alt}
